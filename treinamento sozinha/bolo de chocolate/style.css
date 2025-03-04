@@ -1,0 +1,43 @@
+@charset "UTF-8"
+body {
+    background-color: rgb(236, 154, 1);
+}
+main {
+    background-color:white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px #592E08;
+    width: 900px;
+    padding: 10px;
+    margin: auto;
+}
+
+.ingredientes {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    color: #333;
+}
+
+.lista-ingredientes, .lista-ingredientes2 {
+    display:inline-flex;
+    justify-content: flex-end;
+    gap: 80px;
+}
+
+.coluna {
+    list-style: none;
+    padding: 0;
+}
+
+.coluna li {
+    margin-bottom: 10px;
+    color: #555;
+}
