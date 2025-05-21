@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing dogs</title>
+    <link rel="shortcut icon" href="imagens/favicon.ico.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body onresize="mudouTamanho ()">
+    <header>
+        <h1>Dogs you should have</h1>
+        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Dachshund</a></li>
+                <li><a href="#">Golden Retriever</a></li>
+                <li><a href="#">Chow Chow</a></li>
+                <li><a href="#">Cocker</a></li>
+            </ul>
+        </menu>
+    </header>
+        <main>
+            <article>
+                <h2>Border Collie</h2>
+                <p>The Border Collie is a highly intelligent and energetic dog breed that originated on the border between England and Scotland. Known for its exceptional herding abilities, this breed was originally developed to help farmers manage sheep and other livestock.
+                Border Collies are medium-sized dogs with a strong, athletic build. They usually have a black and white coat, but other colors like red, brown, and merle are also common. Their eyes are expressive, and their alert ears show how attentive and focused they are.
+                One of the most remarkable traits of the Border Collie is its intelligence. They are often considered one of the smartest dog breeds in the world. Because of this, they learn commands quickly and perform very well in obedience and agility competitions.
+                However, Border Collies need a lot of mental stimulation and physical exercise. They are happiest when they have a job to do or a task that challenges them. Without enough activity, they can become bored and develop behavioral problems.
+                In the right environment, with an active family or as a working dog, the Border Collie is a loyal, loving, and hardworking companion.</p>
+            </article>
+        </main>
+        <script>
+
+            function MudouTamanho () {
+                if (window.innerWidth >= 768) {
+                    itens.style.display = 'block'
+                } else {
+                    itens.style.display = 'none'
+                }
+            }
+            function clickMenu () {
+                if (itens.style.display =='block') {
+                    itens.style.display = 'none'
+                } else {
+                    itens.style.display = 'block'
+                }
+            }
+        </script>
+</body>
+</html>
